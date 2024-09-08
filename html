@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreWorld - Your Adventure Starts Here</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">ExploreWorld</div>
+        <nav>
+            <ul id="nav-ul">
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contactus">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Landing Section -->
+    <section class="landing">
+        <div class="landing-text">
+            <h1>Never Stop Exploring the World</h1>
+            <p>Discover stunning places across the globe, from beaches to forests and luxurious hotels.</p>
+        </div>
+        <div class="landing-image">
+            <img src="images.jpeg" alt="Travel">
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destination">
+        <h2>Destinations</h2>
+
+        <div class="subsection-container">
+            <!-- Beach Section -->
+            <div class="subsection">
+                <img src="richie-nolan-bsm3a-HYqbE-unsplash.jpg" alt="Beach Destination">
+                <h3>Beautiful Beaches</h3>
+                <p>Relax on serene beaches with crystal-clear water and white sand.</p>
+            </div>
+
+            <!-- Northern Areas Section -->
+            <div class="subsection">
+                <img src="beautiful-famous-waterfall-iceland-winter-season.jpg" alt="Northern Areas">
+                <h3>Northern Areas</h3>
+                <p>Explore breathtaking northern landscapes, perfect for adventure and hiking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contactus">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: contact@exploreworld.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="social-icons">
+            <img src="facebook.png" alt="Facebook">
+            <img src="twitter.png" alt="Twitter">
+            <img src="instagram.png" alt="Instagram">
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2>Add a comment</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Enter you comment here" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ExploreWorld. All rights reserved.</p>
+       
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navUl = document.getElementById('nav-ul');
+            navUl.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
